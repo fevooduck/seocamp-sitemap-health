@@ -110,6 +110,40 @@ sitemap-health-seocamp-new/
 
 ---
 
+## ✅ Pré-requisitos
+
+### Node.js
+Este projeto requer **Node.js v16.0.0 ou superior** para funcionar corretamente.
+
+#### 📥 Como Instalar Node.js
+
+1. **Acesse o site oficial:** [nodejs.org](https://nodejs.org/)
+
+2. **Escolha a versão:**
+   - **LTS (Long Term Support)** - Recomendado para produção e projetos estáveis
+   - **Current** - Versão mais recente com novos recursos
+
+3. **Instale seguindo o instalador** apropriado para seu sistema operacional (Windows, macOS ou Linux)
+
+#### ✔️ Verificar a Instalação
+
+Após a instalação, abra seu terminal (Prompt de Comando, PowerShell ou Terminal) e execute:
+
+```bash
+node --version
+npm --version
+```
+
+Você deverá ver as versões instaladas. Exemplo:
+```
+v18.17.1
+9.6.7
+```
+
+Se as versões aparecerem, Node.js foi instalado com sucesso! ✨
+
+---
+
 ## 🚀 Como Executar
 
 ### 1. Instalação
