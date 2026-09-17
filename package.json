@@ -1,0 +1,23 @@
+{
+  "name": "sitemap-health-checker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/ensure-cli-deps.cjs",
+    "dev": "concurrently --kill-others-on-fail --prefix name --names \"vite,server\" --prefix-colors \"cyan,magenta\" \"vite\" \"npm run server --prefix cli\"",
+    "build": "vite build",
+    "preview": "concurrently \"vite preview\" \"npm run server --prefix cli\"",
+    "postinstall": "node scripts/ensure-cli-deps.cjs",
+    "test": "node --test cli/tests/**/*.test.js"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.7"
+  }
+}
