@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520">
+  <defs>
+    <filter id="excelShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="520" fill="#f1f5f9"/>
+
+  <g transform="translate(30, 24)" filter="url(#excelShadow)">
+    <!-- Excel Window Frame -->
+    <rect width="940" height="472" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <!-- Excel Titlebar -->
+    <path d="M 0,8 Q 0,0 8,0 L 932,0 Q 940,0 940,8 L 940,36 L 0,36 Z" fill="#107c41"/>
+    <text x="24" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff">📊 Excel — sitemap-health_2026-09-16.xlsx</text>
+
+    <!-- Formula Bar -->
+    <rect x="0" y="36" width="940" height="28" fill="#f8fafc"/>
+    <line x1="0" y1="64" x2="940" y2="64" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="10" y="40" width="48" height="20" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="34" y="54" font-family="Calibri, sans-serif" font-size="12" fill="#475569" text-anchor="middle">A2</text>
+    <text x="74" y="55" font-family="Calibri, sans-serif" font-size="12" fill="#1e293b">https://www.meusite.com.br/checkout/api-gateway</text>
+
+    <!-- Cabeçalhos de Coluna (A, B, C, D, E, F, G) -->
+    <rect x="0" y="64" width="940" height="24" fill="#f1f5f9"/>
+    <line x1="0" y1="88" x2="940" y2="88" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="20" y="80" font-family="Calibri, sans-serif" font-size="11" font-weight="600" fill="#64748b"></text>
+    <text x="180" y="80" font-family="Calibri, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle">A (URL Verificada)</text>
+    <text x="390" y="80" font-family="Calibri, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle">B (Status)</text>
+    <text x="470" y="80" font-family="Calibri, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle">C (Mensagem)</text>
+    <text x="640" y="80" font-family="Calibri, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle">D (Destino Location)</text>
+    <text x="810" y="80" font-family="Calibri, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle">E (Content-Type)</text>
+    <text x="900" y="80" font-family="Calibri, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle">F (ms)</text>
+
+    <!-- Linha 1 (Cabeçalho estilizado em Indigo FF4338CA com texto branco) -->
+    <rect x="36" y="88" width="904" height="32" fill="#4338ca"/>
+    <text x="18" y="108" font-family="Calibri, sans-serif" font-size="11" fill="#64748b">1</text>
+    <text x="50" y="109" font-family="Calibri, sans-serif" font-size="12" font-weight="700" fill="#ffffff">URL Verificada ▾</text>
+    <text x="390" y="109" font-family="Calibri, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Status HTTP ▾</text>
+    <text x="470" y="109" font-family="Calibri, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Mensagem ▾</text>
+    <text x="640" y="109" font-family="Calibri, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Destino Redirecionamento ▾</text>
+    <text x="810" y="109" font-family="Calibri, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Content-Type ▾</text>
+    <text x="900" y="109" font-family="Calibri, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Tempo (ms) ▾</text>
+
+    <!-- Linha 2 (500 Erro Servidor) -->
+    <g transform="translate(0, 120)">
+      <line x1="0" y1="32" x2="940" y2="32" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="18" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b">2</text>
+      <text x="50" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#0f172a">https://www.meusite.com.br/checkout/api-gateway</text>
+      <rect x="366" y="5" width="48" height="22" rx="3" fill="#fce7f3"/>
+      <text x="390" y="21" font-family="Calibri, sans-serif" font-size="11" font-weight="700" fill="#9d174d" text-anchor="middle">500</text>
+      <text x="470" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Internal Server Error</text>
+      <text x="640" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">-</text>
+      <text x="810" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">application/json</text>
+      <text x="916" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#0f172a" text-anchor="end">412</text>
+    </g>
+
+    <!-- Linha 3 (404 Erro Cliente) -->
+    <g transform="translate(0, 152)">
+      <line x1="0" y1="32" x2="940" y2="32" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="18" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b">3</text>
+      <text x="50" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#0f172a">https://www.meusite.com.br/produtos/categoria-antiga</text>
+      <rect x="366" y="5" width="48" height="22" rx="3" fill="#fee2e2"/>
+      <text x="390" y="21" font-family="Calibri, sans-serif" font-size="11" font-weight="700" fill="#b91c1c" text-anchor="middle">404</text>
+      <text x="470" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Not Found</text>
+      <text x="640" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">-</text>
+      <text x="810" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">text/html</text>
+      <text x="916" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#0f172a" text-anchor="end">78</text>
+    </g>
+
+    <!-- Linha 4 (301 Redirect) -->
+    <g transform="translate(0, 184)">
+      <line x1="0" y1="32" x2="940" y2="32" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="18" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b">4</text>
+      <text x="50" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#0f172a">https://www.meusite.com.br/blog/artigo-2023</text>
+      <rect x="366" y="5" width="48" height="22" rx="3" fill="#fef3c7"/>
+      <text x="390" y="21" font-family="Calibri, sans-serif" font-size="11" font-weight="700" fill="#b45309" text-anchor="middle">301</text>
+      <text x="470" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Moved Permanently</text>
+      <text x="640" y="21" font-family="Calibri, sans-serif" font-size="11" font-weight="600" fill="#b45309" text-anchor="middle">https://.../artigo-2026</text>
+      <text x="810" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">text/html</text>
+      <text x="916" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#0f172a" text-anchor="end">64</text>
+    </g>
+
+    <!-- Linha 5 (200 OK) -->
+    <g transform="translate(0, 216)">
+      <line x1="0" y1="32" x2="940" y2="32" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="18" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b">5</text>
+      <text x="50" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#0f172a">https://www.meusite.com.br/</text>
+      <rect x="366" y="5" width="48" height="22" rx="3" fill="#d1fadf"/>
+      <text x="390" y="21" font-family="Calibri, sans-serif" font-size="11" font-weight="700" fill="#027a48" text-anchor="middle">200</text>
+      <text x="470" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">OK</text>
+      <text x="640" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">-</text>
+      <text x="810" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">text/html</text>
+      <text x="916" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#0f172a" text-anchor="end">92</text>
+    </g>
+
+    <!-- Linha 6 (200 OK) -->
+    <g transform="translate(0, 248)">
+      <line x1="0" y1="32" x2="940" y2="32" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="18" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b">6</text>
+      <text x="50" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#0f172a">https://www.meusite.com.br/sobre-nos</text>
+      <rect x="366" y="5" width="48" height="22" rx="3" fill="#d1fadf"/>
+      <text x="390" y="21" font-family="Calibri, sans-serif" font-size="11" font-weight="700" fill="#027a48" text-anchor="middle">200</text>
+      <text x="470" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">OK</text>
+      <text x="640" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">-</text>
+      <text x="810" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">text/html</text>
+      <text x="916" y="21" font-family="Calibri, sans-serif" font-size="11" fill="#0f172a" text-anchor="end">88</text>
+    </g>
+
+    <!-- Rodapé com as Abas do Excel: "Resultados" e "Resumo" -->
+    <g transform="translate(0, 440)">
+      <rect width="940" height="32" fill="#f1f5f9"/>
+      <line x1="0" y1="0" x2="940" y2="0" stroke="#cbd5e1" stroke-width="1"/>
+      
+      <!-- Aba Ativa: Resultados -->
+      <path d="M 40,32 L 40,6 Q 40,2 44,2 L 156,2 Q 160,2 160,6 L 160,32 Z" fill="#ffffff"/>
+      <rect x="40" y="0" width="120" height="3" fill="#107c41"/>
+      <text x="100" y="20" font-family="Calibri, sans-serif" font-size="12" font-weight="700" fill="#107c41" text-anchor="middle">Resultados</text>
+
+      <!-- Aba Inativa: Resumo -->
+      <path d="M 166,32 L 166,8 L 266,8 L 266,32 Z" fill="#e2e8f0"/>
+      <text x="216" y="20" font-family="Calibri, sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="middle">Resumo</text>
+    </g>
+  </g>
+</svg>

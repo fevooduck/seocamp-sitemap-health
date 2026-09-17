@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <filter id="cliShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="620" fill="#0f172a"/>
+
+  <g transform="translate(40, 30)" filter="url(#cliShadow)">
+    <!-- Terminal Window -->
+    <rect width="920" height="560" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Titlebar -->
+    <path d="M 0,10 Q 0,0 10,0 L 910,0 Q 920,0 920,10 L 920,38 L 0,38 Z" fill="#0f172a"/>
+    <line x1="0" y1="38" x2="920" y2="38" stroke="#334155" stroke-width="1"/>
+    <circle cx="20" cy="19" r="6" fill="#ef4444"/>
+    <circle cx="38" cy="19" r="6" fill="#f59e0b"/>
+    <circle cx="56" cy="19" r="6" fill="#10b981"/>
+    <text x="460" y="24" font-family="'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#94a3b8" text-anchor="middle">zsh — node cli/check-sitemap.js (80x24)</text>
+
+    <!-- Terminal Content -->
+    <g transform="translate(24, 60)" font-family="'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" xml:space="preserve">
+      <!-- Command prompt -->
+      <text y="0"><tspan fill="#38bdf8">codeduck@macbook</tspan><tspan fill="#94a3b8">:</tspan><tspan fill="#a855f7">~/studies/sitemap-health</tspan><tspan fill="#94a3b8">$</tspan> <tspan fill="#f8fafc">node cli/check-sitemap.js https://meusite.com.br/sitemap.xml</tspan></text>
+
+      <!-- Banner -->
+      <text y="32" font-weight="700" fill="#60a5fa">=== Sitemap Health Checker CLI ===</text>
+
+      <!-- Init -->
+      <text y="58"><tspan fill="#f1f5f9">Iniciando auditoria para: </tspan><tspan fill="#38bdf8">https://meusite.com.br/sitemap.xml</tspan></text>
+      <text y="78" fill="#64748b">Baixando e analisando estrutura do XML...</text>
+      <text y="98" fill="#4ade80">✓ Extraídas 148 URLs únicas.</text>
+
+      <text y="128" fill="#f1f5f9">Iniciando verificação de integridade HTTP (5 conexões simultâneas com jitter)...</text>
+
+      <!-- Progress lines -->
+      <text y="156"><tspan fill="#94a3b8">[</tspan><tspan fill="#38bdf8">145/148</tspan><tspan fill="#94a3b8">] (98%) [</tspan><tspan fill="#4ade80">200 OK</tspan><tspan fill="#94a3b8">] 72ms  https://meusite.com.br/categoria/tecnologia</tspan></text>
+      <text y="176"><tspan fill="#94a3b8">[</tspan><tspan fill="#38bdf8">146/148</tspan><tspan fill="#94a3b8">] (98%) [</tspan><tspan fill="#f87171">404 CLIENT_ERR</tspan><tspan fill="#94a3b8">] 85ms  https://meusite.com.br/produtos/antigos</tspan></text>
+      <text y="196"><tspan fill="#94a3b8">[</tspan><tspan fill="#38bdf8">147/148</tspan><tspan fill="#94a3b8">] (99%) [</tspan><tspan fill="#fbbf24">301 REDIRECT</tspan><tspan fill="#94a3b8">] 64ms  https://meusite.com.br/artigo-2023</tspan> <tspan fill="#fbbf24">-&gt; https://meusite.com.br/artigo-2026</tspan></text>
+      <text y="216"><tspan fill="#94a3b8">[</tspan><tspan fill="#38bdf8">148/148</tspan><tspan fill="#94a3b8">] (100%) [</tspan><tspan fill="#4ade80">200 OK</tspan><tspan fill="#94a3b8">] 91ms  https://meusite.com.br/contato</tspan></text>
+
+      <!-- Resumo da Auditoria -->
+      <text y="254" font-weight="700" fill="#60a5fa">=== Resumo da Auditoria ===</text>
+      <text y="278"><tspan fill="#94a3b8">Total de URLs:          </tspan><tspan font-weight="700" fill="#f8fafc">148</tspan></text>
+      <text y="298"><tspan fill="#94a3b8">Sucesso (2xx):          </tspan><tspan font-weight="700" fill="#4ade80">132</tspan></text>
+      <text y="318"><tspan fill="#94a3b8">Redirecionamentos (3xx): </tspan><tspan font-weight="700" fill="#fbbf24">8</tspan></text>
+      <text y="338"><tspan fill="#94a3b8">Erros do Cliente (4xx): </tspan><tspan font-weight="700" fill="#f87171">6</tspan></text>
+      <text y="358"><tspan fill="#94a3b8">Erros de Servidor (5xx): </tspan><tspan font-weight="700" fill="#e879f9">2</tspan></text>
+      <text y="378"><tspan fill="#94a3b8">Falhas de Rede (0):     </tspan><tspan font-weight="700" fill="#94a3b8">0</tspan></text>
+      <text y="398"><tspan fill="#94a3b8">Tempo Médio de Resposta: </tspan><tspan fill="#f8fafc">124ms</tspan></text>
+      <text y="418"><tspan fill="#94a3b8">Duração Total:          </tspan><tspan fill="#f8fafc">14.2s</tspan></text>
+
+      <!-- Excel output -->
+      <text y="448" fill="#64748b">Gerando planilha Excel estilizada...</text>
+      <text y="468" font-weight="700" fill="#4ade80">✓ Relatório Excel gerado com sucesso em:</text>
+      <text y="488" fill="#38bdf8">/Users/codeduck/.../cli/reports/sitemap-health_2026-09-16_22-30-00.xlsx</text>
+    </g>
+  </g>
+</svg>

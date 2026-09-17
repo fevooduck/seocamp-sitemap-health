@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" width="1200" height="860">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#ede9fe"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5925dc"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.07"/>
+    </filter>
+    <filter id="windowShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="860" fill="url(#bgGrad)"/>
+
+  <!-- Janela do Navegador / Dashboard Frame -->
+  <g transform="translate(40, 30)" filter="url(#windowShadow)">
+    <!-- Barra superior da janela -->
+    <rect width="1120" height="800" rx="12" fill="#ffffff"/>
+    <path d="M 0,12 Q 0,0 12,0 L 1108,0 Q 1120,0 1120,12 L 1120,44 L 0,44 Z" fill="#f8fafc"/>
+    <line x1="0" y1="44" x2="1120" y2="44" stroke="#e2e8f0" stroke-width="1"/>
+
+    <!-- Controles da janela (macOS traffic lights) -->
+    <circle cx="24" cy="22" r="6" fill="#ef4444"/>
+    <circle cx="44" cy="22" r="6" fill="#f59e0b"/>
+    <circle cx="64" cy="22" r="6" fill="#10b981"/>
+
+    <!-- Barra de endereço / URL mock -->
+    <rect x="220" y="10" width="680" height="24" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="560" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">http://localhost:5173 — Sitemap Health Checker | SEOcamp 2026</text>
+
+    <!-- CONTEÚDO DA APLICAÇÃO -->
+    <g transform="translate(36, 64)">
+      <!-- Header do App -->
+      <g>
+        <rect x="0" y="0" width="32" height="32" rx="8" fill="#5925dc" opacity="0.1"/>
+        <path d="M 10,18 A 4 4 0 0 0 16 18.5 L 20 14.5 A 4 4 0 0 0 14.5 8.8 L 13 10.3" fill="none" stroke="#5925dc" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M 14,14 A 4 4 0 0 0 8 13.5 L 4 17.5 A 4 4 0 0 0 9.5 23.2 L 11 21.7" fill="none" stroke="#5925dc" stroke-width="2.2" stroke-linecap="round" transform="translate(6, -2)"/>
+        
+        <text x="42" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Sitemap Health Checker</text>
+        <rect x="302" y="7" width="84" height="22" rx="4" fill="#5925dc"/>
+        <text x="344" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">SEOCAMP 2026</text>
+
+        <!-- Status Server Local -->
+        <rect x="800" y="2" width="248" height="30" rx="15" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+        <circle cx="816" cy="17" r="4.5" fill="#16a34a"/>
+        <circle cx="816" cy="17" r="8" fill="#16a34a" opacity="0.2"/>
+        <text x="830" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#15803d">Servidor local conectado (:4000)</text>
+      </g>
+
+      <!-- Divisória Header -->
+      <line x1="0" y1="44" x2="1048" y2="44" stroke="#f1f5f9" stroke-width="1.5"/>
+
+      <!-- Card do Formulário de URL -->
+      <g transform="translate(0, 56)" filter="url(#cardShadow)">
+        <rect width="1048" height="96" rx="10" fill="#ffffff" stroke="#f1f5f9" stroke-width="1"/>
+        
+        <!-- Input URL -->
+        <rect x="20" y="18" width="710" height="42" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+        <text x="36" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#1e293b">https://www.meusite.com.br/sitemap.xml</text>
+        
+        <!-- Botão Analisar -->
+        <rect x="742" y="18" width="168" height="42" rx="6" fill="#5925dc"/>
+        <polygon points="762,34 772,39 762,44" fill="#ffffff"/>
+        <text x="828" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle">Analisar Sitemap</text>
+        
+        <!-- Botão Opções -->
+        <rect x="922" y="18" width="106" height="42" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="975" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#475569" text-anchor="middle">⚙️ Opções</text>
+
+        <!-- Toggle de Servidor Local -->
+        <circle cx="30" cy="76" r="6" fill="#16a34a"/>
+        <text x="44" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#334155">🟢 Servidor local conectado — usar (Recomendado: sem restrição CORS e 3xx preciso)</text>
+      </g>
+
+      <!-- Barra de Progresso Concluída -->
+      <g transform="translate(0, 164)" filter="url(#cardShadow)">
+        <rect width="1048" height="52" rx="8" fill="#ffffff" stroke="#f1f5f9" stroke-width="1"/>
+        <text x="18" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Auditoria concluída com sucesso!</text>
+        <text x="1030" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="end">148 de 148 (100%)</text>
+        <rect x="18" y="32" width="1012" height="8" rx="4" fill="#e2e8f0"/>
+        <rect x="18" y="32" width="1012" height="8" rx="4" fill="url(#primaryGrad)"/>
+      </g>
+
+      <!-- Métricas Cards (Grid) -->
+      <g transform="translate(0, 228)">
+        <!-- Card Total -->
+        <g transform="translate(0, 0)">
+          <rect width="138" height="74" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#64748b">TOTAL AUDITADO</text>
+          <text x="14" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="700" fill="#0f172a">148</text>
+        </g>
+        <!-- Card 2xx Sucesso -->
+        <g transform="translate(152, 0)">
+          <rect width="138" height="74" rx="8" fill="#ffffff" stroke="#bbf7d0" stroke-width="1"/>
+          <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#15803d">SUCESSO (2XX)</text>
+          <text x="14" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="700" fill="#16a34a">132</text>
+        </g>
+        <!-- Card 3xx Redirect -->
+        <g transform="translate(304, 0)">
+          <rect width="138" height="74" rx="8" fill="#ffffff" stroke="#fde68a" stroke-width="1"/>
+          <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#b45309">REDIRECT (3XX)</text>
+          <text x="14" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="700" fill="#f59e0b">8</text>
+        </g>
+        <!-- Card 4xx Cliente -->
+        <g transform="translate(456, 0)">
+          <rect width="138" height="74" rx="8" fill="#ffffff" stroke="#fecaca" stroke-width="1"/>
+          <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#b91c1c">ERRO CLIENTE (4XX)</text>
+          <text x="14" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="700" fill="#ef4444">6</text>
+        </g>
+        <!-- Card 5xx Servidor -->
+        <g transform="translate(608, 0)">
+          <rect width="138" height="74" rx="8" fill="#ffffff" stroke="#fbcfe8" stroke-width="1"/>
+          <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#9d174d">ERRO SERVIDOR (5XX)</text>
+          <text x="14" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="700" fill="#db2777">2</text>
+        </g>
+        <!-- Card 0 Falha -->
+        <g transform="translate(760, 0)">
+          <rect width="138" height="74" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#64748b">INDISPONÍVEL (0)</text>
+          <text x="14" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="700" fill="#64748b">0</text>
+        </g>
+        <!-- Card Latência -->
+        <g transform="translate(910, 0)">
+          <rect width="138" height="74" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#64748b">TEMPO MÉDIO</text>
+          <text x="14" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="700" fill="#0f172a">124ms</text>
+        </g>
+      </g>
+
+      <!-- Barra de Exportação e Filtros -->
+      <g transform="translate(0, 314)">
+        <!-- Tabs de Filtro -->
+        <rect x="0" y="0" width="70" height="30" rx="4" fill="#5925dc"/>
+        <text x="35" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">Todos 148</text>
+
+        <rect x="76" y="0" width="94" height="30" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="123" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#15803d" text-anchor="middle">2xx OK (132)</text>
+
+        <rect x="176" y="0" width="96" height="30" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="224" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#b45309" text-anchor="middle">3xx Redir (8)</text>
+
+        <rect x="278" y="0" width="94" height="30" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="325" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#b91c1c" text-anchor="middle">4xx Erro (6)</text>
+
+        <rect x="378" y="0" width="94" height="30" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="425" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#9d174d" text-anchor="middle">5xx Erro (2)</text>
+
+        <!-- Botões de Exportação no canto direito -->
+        <rect x="752" y="0" width="88" height="30" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="796" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">📥 CSV</text>
+
+        <rect x="846" y="0" width="88" height="30" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="890" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">📦 JSON</text>
+
+        <rect x="940" y="0" width="108" height="30" rx="4" fill="#5925dc"/>
+        <text x="994" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">📊 Excel (.xlsx)</text>
+      </g>
+
+      <!-- Tabela Ordenada por Severidade -->
+      <g transform="translate(0, 356)" filter="url(#cardShadow)">
+        <rect width="1048" height="350" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+        
+        <!-- Cabeçalho Tabela -->
+        <rect width="1048" height="36" rx="8" fill="#f8fafc"/>
+        <line x1="0" y1="36" x2="1048" y2="36" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="36" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#64748b">STATUS</text>
+        <text x="130" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#64748b">URL VERIFICADA</text>
+        <text x="760" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#64748b">CONTENT-TYPE</text>
+        <text x="930" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-anchor="end">TEMPO</text>
+        <text x="1000" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle">ORIGEM</text>
+
+        <!-- Linha 1: 500 Server Error (Primeiro na Severidade) -->
+        <g transform="translate(0, 36)">
+          <line x1="0" y1="46" x2="1048" y2="46" stroke="#f1f5f9" stroke-width="1"/>
+          <rect x="24" y="10" width="56" height="22" rx="4" fill="#fce7f3"/>
+          <text x="52" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#9d174d" text-anchor="middle">500</text>
+          
+          <text x="130" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#0f172a">https://www.meusite.com.br/checkout/api-gateway</text>
+          <text x="130" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#ef4444">Internal Server Error — Falha no gateway</text>
+          
+          <text x="760" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#64748b">application/json</text>
+          <text x="930" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#0f172a" text-anchor="end">412 ms</text>
+          <rect x="976" y="14" width="48" height="18" rx="3" fill="#f1f5f9"/>
+          <text x="1000" y="27" font-family="monospace" font-size="10" fill="#475569" text-anchor="middle">local</text>
+        </g>
+
+        <!-- Linha 2: 404 Not Found (Segundo na Severidade) -->
+        <g transform="translate(0, 84)">
+          <line x1="0" y1="46" x2="1048" y2="46" stroke="#f1f5f9" stroke-width="1"/>
+          <rect x="24" y="10" width="56" height="22" rx="4" fill="#fee2e2"/>
+          <text x="52" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#b91c1c" text-anchor="middle">404</text>
+          
+          <text x="130" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#0f172a">https://www.meusite.com.br/produtos/categoria-antiga</text>
+          <text x="130" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#b91c1c">Not Found — Página inexistente</text>
+          
+          <text x="760" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#64748b">text/html</text>
+          <text x="930" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#0f172a" text-anchor="end">78 ms</text>
+          <rect x="976" y="14" width="48" height="18" rx="3" fill="#f1f5f9"/>
+          <text x="1000" y="27" font-family="monospace" font-size="10" fill="#475569" text-anchor="middle">local</text>
+        </g>
+
+        <!-- Linha 3: 301 Redirect (Terceiro na Severidade com Location) -->
+        <g transform="translate(0, 132)">
+          <line x1="0" y1="52" x2="1048" y2="52" stroke="#f1f5f9" stroke-width="1"/>
+          <rect x="24" y="12" width="56" height="22" rx="4" fill="#fef3c7"/>
+          <text x="52" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#b45309" text-anchor="middle">301</text>
+          
+          <text x="130" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#0f172a">https://www.meusite.com.br/blog/artigo-2023</text>
+          <text x="130" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#b45309">↳ Destino: https://www.meusite.com.br/blog/artigo-atualizado-2026</text>
+          
+          <text x="760" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#64748b">text/html</text>
+          <text x="930" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#0f172a" text-anchor="end">64 ms</text>
+          <rect x="976" y="16" width="48" height="18" rx="3" fill="#f1f5f9"/>
+          <text x="1000" y="29" font-family="monospace" font-size="10" fill="#475569" text-anchor="middle">local</text>
+        </g>
+
+        <!-- Linha 4: 200 OK (Quarto na Severidade) -->
+        <g transform="translate(0, 186)">
+          <line x1="0" y1="46" x2="1048" y2="46" stroke="#f1f5f9" stroke-width="1"/>
+          <rect x="24" y="10" width="56" height="22" rx="4" fill="#dcfce7"/>
+          <text x="52" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#15803d" text-anchor="middle">200</text>
+          
+          <text x="130" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#0f172a">https://www.meusite.com.br/</text>
+          
+          <text x="760" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#64748b">text/html</text>
+          <text x="930" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#0f172a" text-anchor="end">92 ms</text>
+          <rect x="976" y="12" width="48" height="18" rx="3" fill="#f1f5f9"/>
+          <text x="1000" y="25" font-family="monospace" font-size="10" fill="#475569" text-anchor="middle">local</text>
+        </g>
+
+        <!-- Linha 5: 200 OK -->
+        <g transform="translate(0, 234)">
+          <line x1="0" y1="46" x2="1048" y2="46" stroke="#f1f5f9" stroke-width="1"/>
+          <rect x="24" y="10" width="56" height="22" rx="4" fill="#dcfce7"/>
+          <text x="52" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#15803d" text-anchor="middle">200</text>
+          
+          <text x="130" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#0f172a">https://www.meusite.com.br/sobre-nos</text>
+          
+          <text x="760" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#64748b">text/html</text>
+          <text x="930" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#0f172a" text-anchor="end">88 ms</text>
+          <rect x="976" y="12" width="48" height="18" rx="3" fill="#f1f5f9"/>
+          <text x="1000" y="25" font-family="monospace" font-size="10" fill="#475569" text-anchor="middle">local</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
